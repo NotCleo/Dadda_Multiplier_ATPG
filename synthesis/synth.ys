@@ -1,0 +1,9 @@
+read_verilog dadda4bit.v 
+hierarchy -check -top dadda4 
+read_verilog -lib cmos_cells.v 
+synth 
+dfflibmap -liberty cmos_cells.lib 
+clear 
+abc -liberty cmos_cells.lib 
+opt_clean 
+write_verilog dadda4synthesized.v
