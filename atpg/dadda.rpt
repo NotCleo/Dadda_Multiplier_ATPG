@@ -1,0 +1,28 @@
+1. Circuit structure
+Name of the circuit : 4-bit_Dadda_multiplier
+Number of primary inputs : 8
+Number of primary outputs : 8
+Number of gates : 81
+Level of the circuit : 14
+2. ATPG parameters
+Test pattern generation Mode : RPT + DTPG + TC -------------(1)
+Limit of random patterns (packets) : 16
+Backtrack limit : 10
+Initial random number generator seed : 1771760837
+Test pattern compaction Mode : REVERSE + SHUFFLE
+Limit of shuffling compaction : 2
+Number of shuffles : 8
+3. Test pattern generation results
+Number of test patterns before compaction : 31 -------------(2)
+Number of test patterns after compaction : 15 -------------(3)
+Fault coverage : 98.986 % -------------(4)
+Number of collapsed faults : 296 -------------(5)
+Number of identified redundant faults : 3 -------------(6)
+Number of aborted faults : 0
+Total number of backtrackings : 11
+4. Memory used : 0.000 MB
+5. CPU time
+Initialization : 0.000 Secs
+Fault simulation : 0.000 Secs
+FAN : 0.000 Secs
+Total : 0.000 Secs
